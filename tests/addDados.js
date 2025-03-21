@@ -122,10 +122,10 @@ async function add() {
                 .send(element)
 
         }
-        console.log("dados add");
+        console.log("dados adicionados");
     } catch (error) {
         
         console.log(error);
     }
 }
-add();
+module.exports =  add ;

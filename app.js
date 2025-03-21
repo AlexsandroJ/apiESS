@@ -10,7 +10,9 @@ const noteRoutes = require("./routes/noteRoutes")
 const cors = require('cors');
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: '*', // Permite todas as origens
+  }));
 
 app.use(express.json());
 
