@@ -8,7 +8,9 @@ connectDB()
         app.listen(PORT, () => {
             console.log(`Servidor rodando na porta ${PORT}`);
         });
-        //add();
+        
+        add();
+
     })
     .catch((err) => {
         console.error('Erro ao iniciar o servidor:', err);
