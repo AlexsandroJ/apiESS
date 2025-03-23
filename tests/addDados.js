@@ -1,7 +1,7 @@
 const request = require('supertest');
 
 async function add() {
-    const BASE_URL = process.env.TEST_URL || 'http://localhost:5001';
+    const BASE_URL = process.env.TEST_URL || 'http://opinai.ddns.net:5001';
 
     const newUser = {
         name: "alex",
@@ -128,4 +128,4 @@ async function add() {
         console.log(error);
     }
 }
-module.exports =  add ;
+ add() ;
