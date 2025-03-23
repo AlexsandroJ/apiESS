@@ -6,7 +6,7 @@
     "start": "node server.js",
     "dev": "node --watch server.js",
     "test": "cucumber-js",
-    "testt": "jest --passWithNoTests ",
+    "test:jest": "jest --passWithNoTests ",
     "st": "npm run start && npm run test"
   },
   "keywords": [],
