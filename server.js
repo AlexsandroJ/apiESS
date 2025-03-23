@@ -9,7 +9,7 @@ connectDB()
             console.log(`Servidor rodando na porta ${PORT}`);
         });
         
-        add();
+        
 
     })
     .catch((err) => {

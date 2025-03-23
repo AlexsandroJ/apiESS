@@ -128,4 +128,4 @@ async function add() {
         console.log(error);
     }
 }
-module.exports = add() ;
+module.exports = add ;

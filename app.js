@@ -8,6 +8,7 @@ const commentRoutes = require("./routes/commentRoutes");
 const movieRoutes = require("./routes/movieRoutes")
 const noteRoutes = require("./routes/noteRoutes")
 const cors = require('cors');
+const swagger = require('./swagger/swagger');
 
 const app = express();
 app.use(cors({
@@ -22,5 +23,8 @@ app.use("/reviews", reviewRoutes);
 app.use("/comment", commentRoutes)
 app.use("/movies", movieRoutes)
 app.use("/notes", noteRoutes);
+
+// Documentação Swagger
+swagger(app);
 
 module.exports = app;
