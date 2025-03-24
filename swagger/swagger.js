@@ -8,9 +8,9 @@ const options = {
     definition: {
         openapi: '3.0.0',
         info: {
-            title: 'Notes API',
+            title: 'Opinai API',
             version: '1.0.0',
-            description: 'API para gerenciamento de notas de usuários',
+            description:  'API dedicada à criação, gerenciamento e consulta de reviews sobre filmes e séries. A Opinai API permite que os usuários compartilhem suas opiniões, classifiquem conteúdos audiovisuais e acessem avaliações de outros usuários. Com funcionalidades como pesquisa detalhada, filtragem por gênero, diretor ou plataforma de streaming, e suporte a comentários e interações, esta API é ideal para desenvolvedores que desejam criar plataformas de recomendação personalizadas ou comunidades de cinéfilos. Explore avaliações detalhadas, descubra novos títulos e conecte-se com outros apaixonados por cinema e séries!',
         },
         servers: [
             {

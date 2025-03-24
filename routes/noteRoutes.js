@@ -1,5 +1,5 @@
 const express = require("express");
-const { createNote, findNote, updateNote, getNotes } = require("../controllers/noteController");
+const { createNote, findNote, updateNote, getNotes, deleteNote } = require("../controllers/noteController");
 
 const router = express.Router();
 
@@ -166,5 +166,35 @@ router.put("/edit", updateNote);
  *         description: Nenhuma nota encontrada para o usuário
  */
 router.get("/:email", getNotes);
+
+/**
+ * @swagger
+ * /notes/dell:
+ *   delete:
+ *     summary: Exclui uma nota
+ *     tags: [Notes]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               id:
+ *                 type: string
+ *                 description: ID do usuário
+ *               title:
+ *                 type: string
+ *                 description: Título da nota a ser excluída
+ *             example:
+ *               id: "65b8f..."
+ *               title: "Minha Nota a Ser Excluída"
+ *     responses:
+ *       200:
+ *         description: Nota excluída com sucesso
+ *       404:
+ *         description: Nota não encontrada
+ */
+router.delete("/dell", deleteNote);
 
 module.exports = router;
