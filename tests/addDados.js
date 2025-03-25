@@ -128,5 +128,5 @@ async function add() {
         console.log(error);
     }
 }
-add();
-//module.exports = add ;
+
+module.exports = add ;
